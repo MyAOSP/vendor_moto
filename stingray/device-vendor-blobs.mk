@@ -102,7 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/stingray/proprietary/libtpa.so:system/lib/libtpa.so \
     vendor/moto/stingray/proprietary/libtpa_core.so:system/lib/libtpa_core.so \
     vendor/moto/stingray/proprietary/bootanimation-encrypted.zip:system/media/bootanimation-encrypted.zip \
-    vendor/moto/stingray/proprietary/bootanimation.zip:system/media/bootanimation.zip \
     vendor/moto/stingray/proprietary/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/moto/stingray/proprietary/fw_bcm4329_mfg.bin:system/vendor/firmware/fw_bcm4329_mfg.bin
 
