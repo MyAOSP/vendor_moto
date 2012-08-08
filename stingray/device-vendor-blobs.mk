@@ -120,3 +120,4 @@ PRODUCT_PACKAGES += \
     VZWAPNLib \
     VZWAPNService
 
+$(call inherit-product, vendor/moto/wingray/device-vendor-blobs.mk)

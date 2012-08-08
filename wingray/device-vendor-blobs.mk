@@ -93,9 +93,20 @@ PRODUCT_COPY_FILES += \
     vendor/moto/wingray/proprietary/libtpa.so:system/lib/libtpa.so \
     vendor/moto/wingray/proprietary/libtpa_core.so:system/lib/libtpa_core.so \
     vendor/moto/wingray/proprietary/bootanimation-encrypted.zip:system/media/bootanimation-encrypted.zip \
-    vendor/moto/wingray/proprietary/bootanimation.zip:system/media/bootanimation.zip \
     vendor/moto/wingray/proprietary/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    vendor/moto/wingray/proprietary/fw_bcm4329_mfg.bin:system/vendor/firmware/fw_bcm4329_mfg.bin
+    vendor/moto/wingray/proprietary/fw_bcm4329_mfg.bin:system/vendor/firmware/fw_bcm4329_mfg.bin \
+    vendor/moto/wingray/proprietary/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/moto/wingray/proprietary/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/moto/wingray/proprietary/google.xml:system/etc/preferred-apps/google.xml \
+    vendor/moto/wingray/proprietary/metadata:system/usr/srec/en-US/metadata \
+    vendor/moto/wingray/proprietary/endpointer_dictation.config:system/usr/srec/en-US/endpointer_dictation.config \
+    vendor/moto/wingray/proprietary/endpointer_voicesearch.config:system/usr/srec/en-US/endpointer_voicesearch.config \
+    vendor/moto/wingray/proprietary/ep_acoustic_model:system/usr/srec/en-US/ep_acoustic_model \
+    vendor/moto/wingray/proprietary/libgoogle_endpointer_jni.so:system/lib/libgoogle_endpointer_jni.so \
+    vendor/moto/wingray/proprietary/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
+    vendor/moto/wingray/proprietary/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
+    vendor/moto/wingray/proprietary/libdrmdecrypt.so:system/lib/libdrmdecrypt.so
+
 
 # All the apks necessary for wingray
 PRODUCT_PACKAGES += \
