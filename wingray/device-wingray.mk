@@ -17,28 +17,41 @@ LOCAL_PATH := vendor/moto/wingray
 # Motorola blobs necessary for wingray hardware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2 \
+    $(LOCAL_PATH)/proprietary/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/proprietary/batch:system/bin/batch \
     $(LOCAL_PATH)/proprietary/brcm_guci_drv:system/bin/brcm_guci_drv \
     $(LOCAL_PATH)/proprietary/bugtogo.sh:system/bin/bugtogo.sh \
-    $(LOCAL_PATH)/proprietary/ftmipcd:system/bin/ftmipcd \
-    $(LOCAL_PATH)/proprietary/location:system/bin/location \
-    $(LOCAL_PATH)/proprietary/tcmd:system/bin/tcmd \
     $(LOCAL_PATH)/proprietary/cpcap_gain.bin:system/etc/cpcap_gain.bin \
+    $(LOCAL_PATH)/proprietary/endpointer_dictation.config:system/usr/srec/en-US/endpointer_dictation.config \
+    $(LOCAL_PATH)/proprietary/endpointer_voicesearch.config:system/usr/srec/en-US/endpointer_voicesearch.config \
+    $(LOCAL_PATH)/proprietary/ep_acoustic_model:system/usr/srec/en-US/ep_acoustic_model \
+    $(LOCAL_PATH)/proprietary/ftmipcd:system/bin/ftmipcd \
+    $(LOCAL_PATH)/proprietary/google.xml:system/etc/preferred-apps/google.xml \
+    $(LOCAL_PATH)/proprietary/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
     $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/proprietary/gpsconfig.xml:system/etc/gpsconfig.xml \
-    $(LOCAL_PATH)/proprietary/location.cfg:system/etc/location.cfg \
     $(LOCAL_PATH)/proprietary/key_code_map.txt:system/etc/motorola/12m/key_code_map.txt \
-    $(LOCAL_PATH)/proprietary/tcmd_leds.cfg:system/etc/motorola/12m/tcmd_leds.cfg \
+    $(LOCAL_PATH)/proprietary/LMprec_508.emd:system/media/LMprec_508.emd \
+    $(LOCAL_PATH)/proprietary/location:system/bin/location \
+    $(LOCAL_PATH)/proprietary/location.cfg:system/etc/location.cfg \
+    $(LOCAL_PATH)/proprietary/metadata:system/usr/srec/en-US/metadata \
+    $(LOCAL_PATH)/proprietary/PFFprec_600.emd:system/media/PFFprec_600.emd \
     $(LOCAL_PATH)/proprietary/suplcerts.bks:system/etc/security/suplcerts.bks \
+    $(LOCAL_PATH)/proprietary/tcmd:system/bin/tcmd \
+    $(LOCAL_PATH)/proprietary/tcmd_leds.cfg:system/etc/motorola/12m/tcmd_leds.cfg \
     $(LOCAL_PATH)/proprietary/voip_aud_params.bin:system/etc/voip_aud_params.bin \
-    $(LOCAL_PATH)/proprietary/camera.stingray.so:system/lib/hw/camera.stingray.so \
-    $(LOCAL_PATH)/proprietary/gps.stingray.so:system/lib/hw/gps.stingray.so \
-    $(LOCAL_PATH)/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
-    $(LOCAL_PATH)/proprietary/libtpa.so:system/lib/libtpa.so \
-    $(LOCAL_PATH)/proprietary/libtpa_core.so:system/lib/libtpa_core.so
 
 # All the apks necessary for wingray
 PRODUCT_PACKAGES += \
-    MotoLocationProxy \
-    StingrayProgramMenu \
-    StingrayProgramMenuSystem
+    camera.stingray \
+    gps.stingray \
+    libbt-vendor \
+    libdrmdecrypt \
+    libdrmwvmplugin \
+    libmoto_ecnswrapper \
+    libtpa \
+    libtpa-core \
+    libwvdrm_L3 \
+    libwvm \
+    libWVMStreamControlAPI_L3 \
+    MotoLocationProxy

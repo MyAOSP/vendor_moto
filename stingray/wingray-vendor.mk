@@ -14,6 +14,6 @@
 
 LOCAL_STEM := wingray/device-wingray.mk
 
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/moto/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/nvidia/$(LOCAL_STEM))
+$(call inherit-product, vendor/broadcom/$(LOCAL_STEM))
+$(call inherit-product, vendor/moto/$(LOCAL_STEM))
+$(call inherit-product, vendor/nvidia/$(LOCAL_STEM))
