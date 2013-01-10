@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/motorola/stingray
+LOCAL_PATH := vendor/moto/stingray
 
 # Motorola blobs necessary for stingray hardware
 PRODUCT_COPY_FILES += \
