@@ -55,19 +55,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := moto
 include $(BUILD_PREBUILT)
 
-# libbt-vendor
-
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := libbt-vendor
-LOCAL_SRC_FILES := $(LOCAL_MODULE).so
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := moto
-include $(BUILD_PREBUILT)
-
 # libmoto_ecnswrapper
 
 include $(CLEAR_VARS)
@@ -107,6 +94,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := moto
 include $(BUILD_PREBUILT)
 
-
-endif
 
