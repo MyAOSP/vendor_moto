@@ -45,13 +45,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.stingray \
     gps.stingray \
-    libbt-vendor \
-    libdrmdecrypt \
-    libdrmwvmplugin \
     libmoto_ecnswrapper \
     libtpa \
     libtpa-core \
-    libwvdrm_L3 \
-    libwvm \
-    libWVMStreamControlAPI_L3 \
     MotoLocationProxy
