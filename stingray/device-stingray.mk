@@ -34,4 +34,5 @@ PRODUCT_PACKAGES += \
     StingrayProgramMenuSystem
 
 $(call inherit-product, vendor/moto/stingray/wingray-vendor.mk)
+$(call inherit-product-if-exists, vendor/verizon/device-verizon.mk)
 
